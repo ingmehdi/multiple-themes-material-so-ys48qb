@@ -1,0 +1,24 @@
+<mat-sidenav-container fullscreen>
+	<mat-sidenav #left>
+		<mat-toolbar>Links</mat-toolbar>
+		<mat-nav-list>
+			<a mat-list-item href="https://material.angular.io/guide/theming#multiple-themes">More info on theming</a>
+			<a mat-list-item href="https://stackoverflow.com/questions/47441036/switch-themes-in-angular-material-5">Back to question</a>
+		</mat-nav-list>
+	</mat-sidenav>
+	<mat-sidenav-content>
+		<mat-toolbar color="primary" class="mat-elevation-z3">
+			<button mat-icon-button (click)="left.toggle()"><mat-icon>menu</mat-icon></button> Angular Material 5 App
+		</mat-toolbar>
+		<div class="basic-container">
+			<p>
+				<button mat-button color="warn">Basic Button</button>
+        <button mat-icon-button color="accent"><mat-icon>android</mat-icon></button>
+        <mat-checkbox>Checkbox</mat-checkbox>
+				<mat-slide-toggle>Slide Toggle</mat-slide-toggle>
+			</p>
+			<span class="version-info">Current build: {{version.full}}</span>
+			<button (click)="toggleTheme()" mat-raised-button color="accent">Toggle theme</button>
+		</div>
+	</mat-sidenav-content>
+</mat-sidenav-container>

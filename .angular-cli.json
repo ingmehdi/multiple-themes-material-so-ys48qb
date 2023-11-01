@@ -1,0 +1,9 @@
+{
+  "apps": [{
+    "styles": [
+      "styles.scss",
+      "custom-theme.scss",
+      "light-custom-theme.scss"
+      ]
+  }]
+}
